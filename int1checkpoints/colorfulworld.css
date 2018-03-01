@@ -1,0 +1,11 @@
+p{
+    background-color:grey;
+    border:2px solid black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+img{
+    margin:5px;
+}
+body{
+    text-align: center
+}

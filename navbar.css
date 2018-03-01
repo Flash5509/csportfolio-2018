@@ -1,0 +1,42 @@
+body{
+    text-align: center
+}
+h1{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color:lightpink;
+    border:2px solid black;
+    border-radius:15px;
+    margin:-5px;
+    margin-left:400px;
+    margin-right:400px;
+}
+h2{
+    background-color:#909090;
+    border:3px dashed black;
+    margin:-5px;
+    margin-left:300px;
+    margin-right:300px;
+}
+bodytwo{
+    text-align:center;
+}
+p{
+    background-color:#909090;
+    border:3px dashed black;
+    margin-left:100px;
+    margin-right:100px;
+}
+#navbar{
+    text-align:center;
+}
+#navbar li{
+    border:2px solid black;
+    margin:5px;
+    display:inline-block;
+    background-color: pink;
+    padding: 5px;
+    border-radius:15px;
+}
+#navbar li:hover{
+    background-color:#ff4dff;
+}
