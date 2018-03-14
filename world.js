@@ -1,97 +1,149 @@
-var asia = document.getElementById("asia");
-var antarctica = document.getElementById("antarctica");
-var africa = document.getElementById("africa");
-var northa = document.getElementById("northa");
-var southa = document.getElementById("southa");
-var australia = document.getElementById("australia");
-var europe = document.getElementById("europe");
-
-var japan = document.getElementById("japan");
-var china = document.getElementById("china");
-var vietnam = document.getElementById("vietnam");
-var northk = document.getElementById("northk");
-var southk = document.getElementById("southk");
-var india = document.getElementById("india");
-var thailand = document.getElementById("thailand");
-
-japan.style.visibility = "hidden";
-china.style.visibility = "hidden";
-vietnam.style.visibility = "hidden";
-northk.style.visibility = "hidden";
-southk.style.visibility = "hidden";
-india.style.visibility = "hidden";
-thailand.style.visibility = "hidden";
-
-northa.addEventListener("click", function(){
-    northa.textContent = "United States";
-    asia.textContent = "Mexico";
-    africa.textContent = "Canada";
-    europe.textContent = "Cuba";
-    southa.textContent = "Dominican Republic";
-    australia.textContent = "Bahamas";
-    antarctica.textContent = "Jamaica";
-    southa.style.visibility = "visible";
-
-});
-
-asia.addEventListener("click", function(){
-    japan.style.visibility = "visible";
-    china.style.visibility = "visible";
-    vietnam.style.visibility = "visible";
-    northk.style.visibility = "visible";
-    southk.style.visibility = "visible";
-    india.style.visibility = "visible";
-    thailand.style.visibility = "visible";
-
-})
-
-antarctica.addEventListener("click", function(){
-    asia.textContent = "Anarctica";
-    africa.textContent = " ";
-    antarctica.textContent = " ";
-    europe.textContent = " ";
-    northa.textContent = " ";
-    southa.textContent = " ";
-    australia.textContent = " ";
-})
-
-africa.addEventListener("click", function(){
-    asia.textContent = "Egypt";
-    africa.textContent = "Ethiopia";
-    antarctica.textContent = "Liberia";
-    europe.textContent = "Nigeria";
-    northa.textContent = "Sudan";
-    southa.textContent = "Morocco";
-    australia.textContent = "Zimbabwe";
-})
-
-europe.addEventListener("click", function(){
-    asia.textContent = "Belgium";
-    africa.textContent = "France";
-    antarctica.textContent = "Germany";
-    europe.textContent = "Spain";
-    northa.textContent = "Netherlands";
-    southa.textContent = "Portugal";
-    australia.textContent = "United Kingdom";
-})
-
-southa.addEventListener("click", function(){
-    asia.textContent = "Argentina";
-    africa.textContent = "Brazil";
-    antarctica.textContent = "Chile";
-    europe.textContent = "Peru";
-    northa.textContent = "Paraguay";
-    southa.textContent = "Uruguay";
-    australia.textContent = "Venezuela";
-})
-
-australia.addEventListener("click", function(){
-    asia.textContent = "Australia";
-    africa.textContent = "Fiji";
-    antarctica.textContent = "Palau";
-    europe.textContent = "Micronesia";
-    northa.textContent = "New Zealand";
-    southa.textContent = "Samoa";
-    australia.textContent = "Tonga";
-})
-
+    // variable continents
+    var asia = document.getElementById("asia");
+    var antarctica = document.getElementById("antarctica");
+    var africa = document.getElementById("africa");
+    var northa = document.getElementById("northa");
+    var southa = document.getElementById("southa");
+    var australia = document.getElementById("australia");
+    var europe = document.getElementById("europe");
+    
+    //variable countries in asia
+    var japan = document.getElementById("japan");
+    var china = document.getElementById("china");
+    var vietnam = document.getElementById("vietnam");
+    var northk = document.getElementById("northk");
+    var southk = document.getElementById("southk");
+    var india = document.getElementById("india");
+    var thailand = document.getElementById("thailand");
+    
+    //variable countries in North America
+    var unitedstates = document.getElementById("unitedstates");
+    var mexico = document.getElementById("mexico");
+    var canada = document.getElementById("canada");
+    var cuba = document.getElementById("cuba");
+    var dominicanrepublic = document.getElementById("dominicanrepublic");
+    var bahamas = document.getElementById("bahamas");
+    var jamaica = document.getElementById("jamaica");
+    
+    var h3 = document.getElementById("h3");
+    
+    //asia countries display none
+    japan.style.display = "block";
+    japan.style.display = "none";
+    
+    china.style.display = "block";
+    china.style.display = "none";
+    
+    vietnam.style.display = "block";
+    vietnam.style.display = "none";
+    
+    northk.style.display = "block";
+    northk.style.display = "none";
+    
+    southk.style.display = "block";
+    southk.style.display = "none";
+    
+    india.style.display = "block";
+    india.style.display = "none";
+    
+    thailand.style.display = "block";
+    thailand.style.display = "none";
+    
+    //north america countries display none
+    unitedstates.style.display = "block";
+    unitedstates.style.display = "none";
+    
+    mexico.style.display = "block";
+    mexico.style.display = "none";
+    
+    canada.style.display = "block";
+    canada.style.display = "none";
+    
+    canada.style.display = "block";
+    canada.style.display = "none";
+    
+    cuba.style.display = "block";
+    cuba.style.display = "none";
+    
+    dominicanrepublic.style.display = "block";
+    dominicanrepublic.style.display = "none";
+    
+    bahamas.style.display = "block";
+    bahamas.style.display = "none";
+    
+    jamaica.style.display = "block";
+    jamaica.style.display = "none";
+    
+    // North America show display when clicked
+    northa.addEventListener("click", function(){
+        unitedstates.style.display = "inline";
+        mexico.style.display = "inline";
+        canada.style.display = "inline";
+        cuba.style.display = "inline";
+        dominicanrepublic.style.display = "inline";
+        bahamas.style.display = "inline";
+        jamaica.style.display = "inline";
+        
+        //to disappear when north america countries are displayed
+        japan.style.display = "block";
+        japan.style.display = "none";
+    
+        china.style.display = "block";
+        china.style.display = "none";
+    
+        vietnam.style.display = "block";
+        vietnam.style.display = "none";
+    
+        northk.style.display = "block";
+        northk.style.display = "none";
+    
+        southk.style.display = "block";
+        southk.style.display = "none";
+    
+        india.style.display = "block";
+        india.style.display = "none";
+    
+        thailand.style.display = "block";
+        thailand.style.display = "none";
+        
+    });
+    
+    // Asia show display when clicked
+    asia.addEventListener("click", function(){
+        japan.style.display = "inline";
+        china.style.display = "inline";
+        vietnam.style.display = "inline";
+        northk.style.display = "inline";
+        southk.style.display = "inline";
+        india.style.display = "inline";
+        thailand.style.display = "inline";
+        
+        //to disappear when asia countries are displayed
+        unitedstates.style.display = "block";
+        unitedstates.style.display = "none";
+    
+        mexico.style.display = "block";
+        mexico.style.display = "none";
+    
+        canada.style.display = "block";
+        canada.style.display = "none";
+    
+        canada.style.display = "block";
+        canada.style.display = "none";
+    
+        cuba.style.display = "block";
+        cuba.style.display = "none";
+    
+        dominicanrepublic.style.display = "block";
+        dominicanrepublic.style.display = "none";
+    
+        bahamas.style.display = "block";
+        bahamas.style.display = "none";
+    
+        jamaica.style.display = "block";
+        jamaica.style.display = "none";
+        
+        //inner html change
+        h3.innerHTML = "Countries:"
+    
+    })

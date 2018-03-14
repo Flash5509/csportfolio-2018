@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Going Far</title>
+    <link rel="stylesheet" href="world.css" type="text/css" />
 </head>
 <body>
-    <font face="Comic Sans MS" color="teal"><h1>Where I've Been:</h1></font>
+    <center>
+    <br>
+    <font face="Comic Sans MS" color="teal"><h1>Lets Wander Far</h1></font>
     <body bgcolor=#909090>
-    
+    <br>
+    <h4>
+        Note: Only asia and north america work currently
+    </h4>
+    <!--Continents-->
     <ul>
     <li><button id="asia">Asia</button></li>
     <li><button id="africa">Africa</button></li>
@@ -19,15 +26,43 @@
     <li><button id="southa">South America</button></li>
     <li><button id="australia">Australia/Oceania</button></li>
     </ul>
+    <br>
+    
+    
+    <h3>
+    <div id="h3">
+    Places I've Been:
+    </h3>
+    </div>
+    <br>
+    
+    <!--function for the color change when clicked-->
+    <script>
+        function changing(elmnt,clr) {
+            elmnt.style.color= clr;
+        }
+    </script>
 
-    <button id="japan">Japan</button>
-    <button id="china">China</button>
-    <button id="vietnam">Vietnam</button>
-    <button id="thailand">Thailand</button>
-    <button id="northk">North Korea</button>
-    <button id="southk">South Korea</button>
-    <button id="india">India</button>
+    <!--Button for countries and color change when clicked-->
+    <button id="japan" onclick="changing(this, 'red')">Japan</button>
+    <button id="china" onclick="changing(this, 'red')">China</button>
+    <button id="vietnam" onclick="changing(this, 'red')">Vietnam</button>
+    <button id="thailand" onclick="changing(this, 'red')">Thailand</button>
+    <button id="northk" onclick="changing(this, 'red')">North Korea</button>
+    <button id="southk" onclick="changing(this, 'red')">South Korea</button>
+    <button id="india" onclick="changing(this, 'red')">India</button>
+    
+    <button id="unitedstates" onclick="changing(this, 'red')">United States</button>
+    <button id="mexico" onclick="changing(this, 'red')">Mexico</button>
+    <button id="canada" onclick="changing(this, 'red')">Canada</button>
+    <button id="cuba" onclick="changing(this, 'red')">Cuba</button>
+    <button id="dominicanrepublic" onclick="changing(this, 'red')">Dominican Republic</button>
+    <button id="bahamas" onclick="changing(this, 'red')">Bahamas</button>
+    <button id="jamaica" onclick="changing(this, 'red')">Jamaica</button>
     
     <script type="text/javascript" src="world.js"></script>
+    
+    
+    </center>
 </body>
 </html>
